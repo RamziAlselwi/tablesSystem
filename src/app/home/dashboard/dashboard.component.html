@@ -1,0 +1,147 @@
+<!-- <div class="grid-container">
+  <h1 class="mat-h1">Dashboard</h1>
+  <mat-grid-list cols="2" rowHeight="350px">
+    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            {{card.title}}
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <mat-grid-list cols="2" rowHeight="140px" class="orderList" >
+          <mat-grid-tile >
+          
+              <mat-button-toggle-group #group="matButtonToggleGroup">
+                  <mat-button-toggle value="left" aria-label="Text align left">
+                      <img src="assets/icons/ico1a.png">
+                      <br>
+                      محلي
+                  </mat-button-toggle>
+                  <mat-button-toggle value="center" aria-label="Text align center">
+                      <img src="assets/icons/ico2a.png">
+                      <br>
+                      سفري
+                  </mat-button-toggle>
+                  <mat-button-toggle value="right" aria-label="Text align right">
+                      <img src="assets/icons/ico3a.png">
+                      <br>
+                      توصيل
+                  </mat-button-toggle>
+                  <mat-button-toggle value="justify" aria-label="Text align justify">
+                      <img src="assets/icons/ico4a.png">
+                      <br>
+                      الحجوزات
+                  </mat-button-toggle>
+                </mat-button-toggle-group>
+        
+            </mat-grid-tile>
+
+      </mat-grid-list>
+      
+      <!-- // local request component -->
+      <app-local-request></app-local-request>
+
+    </div>
+    <div class="col-4">
+        <mat-toolbar>
+            إجمالي المطلوب
+            <span class="example-spacer"></span>
+            0.00
+        </mat-toolbar>
+        <mat-list class="list">
+            <mat-list-item>
+              <p>
+                  نوع الطب &nbsp; <strong>محلي </strong> &nbsp;
+              </p>
+             
+              <p style="padding-right: 30px;">
+                  <button mat-raised-button>طاوله9</button>
+                  <!-- <button mat-button color="primary">  </button> -->
+                 
+              </p>
+               
+               &nbsp;
+               <span class="example-spacer"></span>
+              <p color="primary">أسم العميل</p>
+            </mat-list-item>
+
+            <mat-list-item>
+              <p>لحم تيوس بلدي</p>
+              <span class="example-spacer"></span>
+              <p>50.00</p>
+            </mat-list-item>
+
+
+             <mat-list-item>
+              <p>لحم تيوس بلدي</p>
+              <span class="example-spacer"></span>
+              <p>50.00</p>
+            </mat-list-item>
+
+
+             <mat-list-item>
+              <p>لحم تيوس بلدي</p>
+              <span class="example-spacer"></span>
+              <p>50.00</p>
+            </mat-list-item>
+            <br>
+            <br>
+
+            <mat-divider></mat-divider>
+
+            <mat-list-item>
+              <p>
+                  ضريبة القيمة المضافه %5
+              </p>
+              <span class="example-spacer"></span>
+            <p>5.00</p>
+            </mat-list-item>
+
+            
+            <mat-divider></mat-divider>
+
+            <mat-list-item>
+              <p>
+                  الاجمالي
+              </p>
+              <span class="example-spacer"></span>
+              <p>155.00</p>
+            </mat-list-item>
+           
+        </mat-list>
+       <br>
+      <button class="dashbtn" mat-raised-button color="primary">حفظ الفاتورة</button>
+      <br>
+      <br>
+      
+      <button class="dashbtn" mat-raised-button color="accent">حفظ الفاتورة</button>
+
+
+
+    </div>
+    
+  </div>
+  <div class="row">
+  </div>
+  <div class="row">
+
+  </div>
+</div>

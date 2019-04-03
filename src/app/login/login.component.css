@@ -1,0 +1,55 @@
+.full-width {
+  width: 100%;
+  /* background-color: white; */
+}
+
+.login-card {
+  width: 40%;
+  margin: auto;
+}
+
+.welcome-message {
+  text-align: center;
+  color: green;
+}
+
+.welcome-image {
+  width: 40%;
+  margin: auto;
+  display:block;
+}
+/* 
+.input  {
+  background-color: white;
+} */
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  background: white;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  background-color: white;
+}
+
+.mat-radio-button {
+  display: block;
+  margin: 5px 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.col:last-child {
+  margin-right: 0;
+}
+
+.btn {
+  width: 100%
+}
+

@@ -1,0 +1,41 @@
+
+
+
+    <form [formGroup]="addressForm" novalidate (ngSubmit)="onSubmit()">
+      <img class="welcome-image" src="assets/images/vectors.png">
+       <h4 class="welcome-message">مرحباَ بكم في نظام أدارة المطاعم <br>Smart <strong>ERP</strong> </h4>
+      <div class="login-card">
+          <div class="row">
+            <div class="col">
+              <mat-form-field appearance="outline" class="full-width">
+                  <mat-label>أسم الشركة</mat-label>
+                  <mat-icon matSuffix aria-label="Clear">home</mat-icon>
+                  <input matInput type="password" placeholder="أسم الشركة" formControlName="company">
+                </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+                <mat-form-field appearance="outline" class="full-width">
+                    <mat-label>أسم المستخدم</mat-label>
+                    <mat-icon matSuffix aria-label="Clear">person_outline</mat-icon>
+                    <input matInput type="text" placeholder="أسم المستخدم" formControlName="company">
+                  </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              
+              <mat-form-field appearance="outline" class="full-width">
+                  <mat-label>كلمة السر</mat-label>
+                <mat-icon matSuffix aria-label="Clear">vpn_key</mat-icon>
+                <input matInput type="password" placeholder="كلمة السر" formControlName="company">
+              </mat-form-field>
+            </div>
+          </div>
+          <p><a>هل فقدت كلمة السر ؟</a></p>
+          <button class="btn" mat-raised-button color="primary" type="submit">تسجيل</button>
+      </div>
+    </form>
+    
+
