@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpErrorResponse} from '@angular/common/http';
 // import 'rxjs/add/operator/map';
 import { catchError, retry, delay } from 'rxjs/operators';
-// import { }
+import { Observable } from 'rxjs';
 // import 'rxjs/add/operator/toPromise';
 import { SettingService } from './../setting.service';
  
@@ -34,6 +34,21 @@ export class ApiService {
       
   // };
 
+  
+  public getListOfGroup(url: string): Observable<object> {
+
+    return this.http.get(url);
+
+
+  //   return this.http.get(url: string, options: {
+  //     headers?: HttpHeaders;
+  //     observe: 'response';
+  //     params?: HttpParams;
+  //     reportProgress?: boolean;
+  //     responseType?: 'json';
+  //     withCredentials?: boolean;
+  // }): Observable<HttpResponse<Object>>;
+  }
   
   getSystemSetting(){
     return new Promise((resolve, reject) => {
